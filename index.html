@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café de la Loma - Cafetería Artesanal</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuente de Google Fonts para un diseño moderno y legible -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado principal con navegación fija en la parte superior -->
+    <header class="header">
+        <nav class="nav">
+            <!-- Logo y nombre de la cafetería -->
+            <div class="logo">
+                <h1>Café de la Loma</h1>
+            </div>
+            <!-- Menú de navegación principal con enlaces a las secciones -->
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+            </ul>
+            <!-- Menú hamburguesa que aparece en dispositivos móviles -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Hero con imagen de fondo y texto principal -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Bienvenidos a Café de la Loma</h2>
+            <p>Descubre el arte del café artesanal</p>
+        </div>
+    </section>
+
+    <!-- Sección del Menú con tres productos destacados -->
+    <section id="menu" class="menu">
+        <h2>Nuestro Menú</h2>
+        <div class="menu-categories">
+            <!-- Croissant -->
+            <div class="menu-item">
+                <img src="assets/img/croasant.jpg" alt="Croissant">
+                <h4>Croissant</h4>
+                <p>Panadería artesanal francesa</p>
+                <span class="price">$35</span>
+            </div>
+            <!-- Capuccino -->
+            <div class="menu-item">
+                <img src="assets/img/capuccino.jpg" alt="Capuccino">
+                <h4>Capuccino</h4>
+                <p>Espresso con leche espumada</p>
+                <span class="price">$45</span>
+            </div>
+            <!-- Red Velvet -->
+            <div class="menu-item">
+                <img src="assets/img/red_velvet.jpg" alt="Red Velvet">
+                <h4>Red Velvet</h4>
+                <p>Pastel de chocolate rojo</p>
+                <span class="price">$55</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros con información de la cafetería -->
+    <section id="nosotros" class="about">
+        <h2>Sobre Nosotros</h2>
+        <div class="about-content">
+            <p>En Café de la Loma, nos apasiona el arte del café. Cada taza es preparada con esmero y dedicación, utilizando granos seleccionados de las mejores regiones cafetaleras.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Ubicación y Horarios con mapa integrado -->
+    <section id="ubicacion" class="location">
+        <h2>Ubicación y Horarios</h2>
+        <div class="location-content">
+            <!-- Información de dirección -->
+            <div class="address">
+                <h3>Dirección</h3>
+                <p>Centro Comercial Fabricato</p>
+                <p>Piso 3, Local 304</p>
+                <p>Medellín, Colombia</p>
+            </div>
+            <!-- Horarios de atención -->
+            <div class="hours">
+                <h3>Horarios</h3>
+                <p>Lunes a Viernes: 7:00 - 21:00</p>
+                <p>Sábado y Domingo: 8:00 - 22:00</p>
+            </div>
+            <!-- Mapa de Google Maps integrado -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31724.101669785065!2d-75.5454985406162!3d6.327542449170389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429cc26b6daff%3A0xf7397834e4db1edd!2sCentro%20comercial%20Parque%20Fabricato!5e0!3m2!1ses-419!2sco!4v1749203811213!5m2!1ses-419!2sco" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Reservas con formulario de contacto -->
+    <section id="reservas" class="reservations">
+        <h2>Reservaciones</h2>
+        <form class="reservation-form">
+            <!-- Campos del formulario con validación HTML5 -->
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Hora:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">Número de personas:</label>
+                <input type="number" id="guests" name="guests" min="1" max="10" required>
+            </div>
+            <button type="submit">Reservar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página con información de copyright -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Café de la Loma. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html> 
